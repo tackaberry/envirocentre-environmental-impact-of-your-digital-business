@@ -6,6 +6,7 @@ import Img05 from "./images/05.png";
 import Img06 from "./images/06.png";
 import Img07 from "./images/07.png";
 import Img08 from "./images/08.png";
+import Img08a from "./images/08a.png";
 import Img09 from "./images/09.png";
 import Img10 from "./images/10.png";
 import Img11 from "./images/11.png";
@@ -90,7 +91,13 @@ import ImgCF from "./images/cf_map_2019_2.png";
 
 ---
 
-### What does it generate?
+<Box style={{width:'50%'}}>
+
+### Gatsby uses GraphQL to combine your data and your React code to generate static files.
+
+</Box>
+
+## What does it generate?
 
 HTML
 
@@ -98,7 +105,30 @@ JavaScript
 
 CSS
 
-#### ... a JAMstack application (JavaScript, API, Markup)
+#### _ ...(the frontend part of) a JAMstack application (JavaScript, API, Markup)_
+
+---
+
+## Why Gatsby is popular and growing
+
+<Box style={{width:'80%'}}>
+
+- the popularity of the JAMstack approach to building Web Apps and Web Sites
+- the rapid adoption of the Progressive Web Apps technology in the industry
+  - ☝ _which is one of the key features of Gatsby_
+- it’s built in React and GraphQL
+- it’s really powerful
+- it’s fast
+- the documentation is great
+- it hides the complexity, with hooks to customize
+
+<Box style={{fontSize:"1rem", fontStyle:"italic"}}>
+
+adapted from: https://flaviocopes.com/gatsby/
+
+</Box>
+
+</Box>
 
 ---
 
@@ -115,6 +145,10 @@ CSS
 ---
 
 <Image src={Img08} style={{ height: "800px", width: "1200px" }} />
+
+---
+
+<Image src={Img08a} style={{ height: "800px", width: "1200px" }} />
 
 ---
 
@@ -168,9 +202,19 @@ _CDN:_ A content delivery network is a geographically distributed network of ser
 
 - Route-based code splitting!
 
-- Default starter generates a Progressive Web
+- Default starter generates a Progressive Web App
 
 - Static files in a CDN on the edge
+
+---
+
+# The Basics
+
+- Plain old React components
+
+- Pages are just components in `src/pages`
+
+- Router behind the scenes
 
 ---
 
@@ -182,19 +226,9 @@ _CDN:_ A content delivery network is a geographically distributed network of ser
 - SaaS Service
 - API
 - Database
-- The file system itself - json or md content files
+- The file system itself - json or md or mdx content files
 
 ## Dumps it all into a GraphQL schema
-
----
-
-# The Basics
-
-- Plain old React components
-
-- Pages are just components in `src/pages`
-
-- Router behind the scenes
 
 ---
 
