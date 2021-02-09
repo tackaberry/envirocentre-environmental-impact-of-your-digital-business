@@ -1,21 +1,14 @@
-import Img01 from "./images/01.png";
-import Img02 from "./images/02.png";
-import Img03 from "./images/03.png";
-import Img04 from "./images/04.png";
-import Img05 from "./images/05.png";
-import Img06 from "./images/06.png";
-import Img07 from "./images/07.png";
-import Img08 from "./images/08.png";
-import Img08a from "./images/08a.png";
-import Img09 from "./images/09.png";
-import Img10 from "./images/10.png";
-import Img11 from "./images/11.png";
+import { themes } from "mdx-deck";
+
+export const theme = themes.future;
+
+import Img005 from "./images/2020.005.png";
+import Img006 from "./images/2020.006.png";
 import Logo from "./images/Rebel-com-white-orange-large.png";
-import ImgCF from "./images/cf_map_2019_2.png";
 
-# A Modern Web Stack
+# Values and Work
 
-### For IAWD Trends in Web Development
+### For Thom's Professional Practice Class
 
 ## Brett Tackaberry, CTO
 
@@ -29,402 +22,41 @@ import ImgCF from "./images/cf_map_2019_2.png";
 
 - help companies grow, help teams do better
 
-- still making stuff
+- using technology make the world a better place
+
+<Notes>
+
+</Notes>
+
+---
+
+<Invert>
+  <Image src={Img005} style={{ height: "600px", width: "800px" }} />
+</Invert>
 
 ---
 
 # About Rebel
 
+<Steps>
+
 - help small businesses across Canada succeed online
-
 - sell domain names, hosting, email
-
 - run on modern agile and try to be as much devops as we can
 
----
-
-<Box style={{width:"60%"}}>
-
-# Use the tools to work better
-
-# ⟱
-
-# Spend your time being creative and producing high value software
-
-</Box>
+</Steps>
 
 ---
 
-- ReactJS frontend with Gatsby
-- Serverless backend with AWS Lambda
-- Managing and deploying code with Github and AWS
+# Want a free domain?
 
----
-
-<Split>
-
-## Our Stack... roughly
-
-<Image src={Img01} style={{ height: "500px", width: "500px" }} />
-
-</Split>
-
----
-
-# Our Stack on AWS
-
-<Image src={Img02} style={{ height: "500px", width: "900px" }} />
-
----
-
-# Deploying
-
-<Image src={Img03} style={{ height: "350px", width: "900px" }} />
-
----
-
-# Part 1 - ReactJS and Gatsby
-
-[www.gatsbyjs.org](https://www.gatsbyjs.org/)
-
-### A React-based static site generator
-
----
-
-<Box style={{width:'50%'}}>
-
-### Gatsby uses GraphQL to combine your data and your React code to generate static files.
-
-</Box>
-
-## What does it generate?
-
-HTML
-
-JavaScript
-
-CSS
-
-#### _ ...(the frontend part of) a JAMstack application (JavaScript, API, Markup)_
-
----
-
-## Why Gatsby is popular and growing
-
-<Box style={{width:'80%'}}>
-
-- the popularity of the JAMstack approach to building Web Apps and Web Sites
-- the rapid adoption of the Progressive Web Apps technology in the industry
-  - ☝ _which is one of the key features of Gatsby_
-- it’s built in React and GraphQL
-- it’s really powerful
-- it’s fast
-- the documentation is great
-- it hides the complexity, with hooks to customize
-
-<Box style={{fontSize:"1rem", fontStyle:"italic"}}>
-
-adapted from: https://flaviocopes.com/gatsby/
-
-</Box>
-
-</Box>
-
----
-
-# Gatsby ➾ Server Side Rendered React
-
-- Static HTML and CSS that hydrates to a full featured React app
-- Real content on First Paint
-- SEO (Google loves fast sites) And Accessible
-- Open Graph Protocol
-- Edge of the cloud
-- Scalable
-- SSR all the better to work with Serverless!
-
----
-
-<Image src={Img08} style={{ height: "800px", width: "1200px" }} />
-
----
-
-<Image src={Img08a} style={{ height: "800px", width: "1200px" }} />
-
----
-
-<Split>
-
-Inidividual html, css, javascript.
-
-<Image src={Img04} style={{ height: "500px", width: "500px" }} />
-
-</Split>
-
----
-
-# Static File Storage and CDN
-
-<Image src={Img09} style={{ height: "350px", width: "600px" }} />
+### You just have to ask. Details at the end
 
 ---
 
 <Invert>
-
-# CDN and the Edge
-
-<Box style={{width:'80%'}}>
-
-_Edge:_ Geographically close to location the web request was made.
-
-_CDN:_ A content delivery network is a geographically distributed network of servers. Requests for content are algorithmically directed to nodes optimized for performance.
-
-</Box>
-
+  <Image src={Img006} style={{ height: "600px", width: "800px" }} />
 </Invert>
-
----
-
-<Invert>
-
-# AWS Edge Locations
-
-<Image src={ImgCF} style={{ height: "400px", width: "800px" }} />
-
-</Invert>
-
----
-
-# Performance
-
-- Loads only what it needs to get started
-
-- Prefetches from other pages to speed up navigation
-
-- Route-based code splitting!
-
-- Default starter generates a Progressive Web App
-
-- Static files in a CDN on the edge
-
----
-
-# The Basics
-
-- Plain old React components
-
-- Pages are just components in `src/pages`
-
-- Router behind the scenes
-
----
-
-## You pull your site data from anywhere using GraphQL!
-
-## Pull data from:
-
-- Headless CMS
-- SaaS Service
-- API
-- Database
-- The file system itself - json or md or mdx content files
-
-## Dumps it all into a GraphQL schema
-
----
-
-# What else makes this really useful to us
-
-<Box style={{width:"60%"}}>
-
-- We see our gatsby repo as our content repo
-- Marketing and Product teams can manage and deploy content and layout configuration
-- Functional react components are in UI repo
-- Open and sharable components are in a public repo: https://github.com/rebeldotcom/rebel-web-components
-
-</Box>
-
----
-
-# Part 2 - Lambda and Serverless.com
-
----
-
-# "Serverless"
-
-- Abstraction of code from the backend infrastructure
-- Event driven: API call, scheduled, machine-to-machine
-- Micro-billing
-
----
-
-# AWS Lambda
-
-<Image src={Img05} style={{ height: "330px", width: "800px" }} />
-
----
-
-# Stateless / Stateful
-
-- No local files or local Database
-- Connect to other services to save files or data
-
----
-
-# What this means to a company
-
-- No servers to provision
-
-- Scales with usage
-
-- Never pay for idle time
-
-- Quicker to launch an idea
-
----
-
-# Sample Lambda code with NodeJS
-
-```javascript
-exports.handler = function (event, context, callback) {
-  console.log("Received event: ", event);
-  var data = {
-    greetings: "How do you do, fellow kids.",
-  };
-  callback(null, data);
-};
-```
-
----
-
-# Sample Lambda code with NodeJS
-
-```javascript
-exports.submit = async (event, context, callback) => {
-  console.log("Received event: ", event);
-
-  const item = JSON.parse(event.body);
-
-  // store submission in database
-  await dynamodb.put(item);
-
-  return {
-    statusCode: 200,
-    body: JSON.stringify({ message: "form submission received" }),
-  };
-};
-```
-
----
-
-# Serverless.com Framework
-
-## Helps you deploy serverless apps to AWS Lamnbda (and more)
-
----
-
-# Serverless.com Configuration
-
-```yaml
-service: demo-email-form
-
-provider:
-  name: aws
-  runtime: nodejs12.x
-
-functions:
-  formSubmit:
-    handler: index.submit
-    events:
-      - http:
-          path: submit
-          method: post
-          cors: true
-```
-
----
-
-# _Pro tip_
-
-<Box style={{width:"60%"}}>
-
-### Include definition for other resources like S3 and Dynamodb for auto deploy of infrastructure
-
-</Box>
-
----
-
-# Serverless.com - Deploy with one command
-
-```
-serverless deploy
-```
-
-<Image src={Img06} style={{ height: "150px", width: "500px" }} />
-
-```
-POST http://yourapi.com/submit
-```
-
----
-
-# https://www.serverless.com/examples/
-
-<Image src={Img07} style={{ height: "600px", width: "900px" }} />
-
----
-
-# Part 3 - Deploying
-
----
-
-# What we do
-
-<Image src={Img03} style={{ height: "350px", width: "900px" }} />
-
----
-
-<Image src={Img10} style={{ height: "400px", width: "900px" }} />
-
----
-
-# It is as simple as this ⇓
-
-<Image src={Img11} style={{ height: "300px", width: "700px" }} />
-
----
-
-# Even easier: Github Actions
-
-- Github Push + Github Actions ➾ Deploy to AWS
-- See (`.github/workflows/main.yml`)
-- Deploys to: http://algonquin-iawd-trends-web-development.s3-website.ca-central-1.amazonaws.com/
-- A new point
-
----
-
-```
-github.com/you/yourrepo
-
-/backend-serverless-app
-
-/frontend-gatsby-react-app
-
-/github-workflows
-
-
-```
-
----
-
-<Box style={{width:"60%"}}>
-
-# Use the tools to work better
-
-# ⟱
-
-# Spend your time being creative and producing high value software
-
-</Box>
 
 ---
 
@@ -438,7 +70,7 @@ github.com/you/yourrepo
 
 - https://github.com/tackaberry
 
-- [This Presentation](https://github.com/tackaberry/algonquin-iawd-trends-web-development)
+- [This Presentation](http://algonquin-professional-practice.s3-website.ca-central-1.amazonaws.com/)
 
 ---
 
