@@ -1,8 +1,20 @@
-export { default as theme } from "./Theme";
-import LayoutColor from "./LayoutColor";
+export { default as theme } from "./components/Theme";
+import LayoutColor from "./components/LayoutColor";
+import LayoutColorLight from "./components/LayoutColorLight";
+import Footnote from "./components/Footnote";
 
 import Brett from "./images/brett.jpg";
 import RebelLogo from "./images/Rebel-com-white-orange-large.png";
+import RebelLogoWhite from "./images/Rebel-com-large-white.png";
+import Antitracker from "./images/antitracker2.png";
+import Muskfoundation from "./images/muskfoundation.png";
+import Websitecarbon from "./images/websitecarbon.png";
+import Websitecarbon1 from "./images/websitecarbon1.png";
+import Websitecarbon2 from "./images/websitecarbon2.png";
+import SustainableWebdesign from "./images/sustainable-webdesign.png";
+import ClimateActionTech from "./images/climateactiontech.png";
+
+<LayoutColor color="#333">
 
 # The Environmental Impact of Your Digital Business
 
@@ -14,7 +26,11 @@ import RebelLogo from "./images/Rebel-com-white-orange-large.png";
 
 <Image src={RebelLogo} style={{ height: "100px", width: "450px" }} />
 
+</LayoutColor>
+
 ---
+
+<LayoutColor color="#292e42">
 
 <Split>
 
@@ -34,97 +50,258 @@ use technology make the world a better place
 
 </Notes>
 
+</LayoutColor>
+
 ---
 
-# About Rebel
+<LayoutColor color="#292e42">
+
+<Image src={RebelLogoWhite} style={{ height: "100px", width: "450px" }} />
 
 - Sell domain names, websites, hosting, ecommerce, email
 - Help small businesses across Canada succeed online
 - In business in Ottawa for 20+ years
 
+</LayoutColor>
+
 ---
+
+<LayoutColor color="#c4470e">
+
+<div style={{width:"900px", fontColor:"white"}}>
 
 # 7 things you can do with the digital and technology parts of your organization to lighten your environmental impact
 
+</div>
+
+</LayoutColor>
+
 ---
 
-What it isnt?
+<LayoutColor color="#000">
 
-- Heating, electricity or utilities of your business
+# What it isnt?
+
+- Office Heating, electricity or utilities of your business
 - On-site technology or appliances
-- Transportation to or from work
-- Remote working: https://www.envirocentre.ca/what-if-remote-work-became-the-new-normal/
+- Transportation to work
+- Remote working ([An article on EnviroCentre.ca](https://www.envirocentre.ca/what-if-remote-work-became-the-new-normal/) by Mike Gifford)
+
+</LayoutColor>
 
 ---
 
-# Number 1: Email
+<LayoutColor color="#6b393f">
 
-- Emails are very waseful
-- Every email is sent, scanned for viruses, stored, downloaded to devices... Printed?!
-- Don't forget spam
+# \#1. Email
+
+</LayoutColor>
 
 ---
 
-An average spam email: 0.3 g CO2e (carbon dioxide equivalent)
+# Emails are very waseful
 
-A standard email: 4 g CO2e
+- Every email is sent to all recipients
+- Scanned for viruses
+- Stored... forever
+- Downloaded to devices...
+- Printed?!
+- There's also spam, newsletters, auto-replies, notifications
 
-An email with “long and tiresome attachments”: 50 g CO2e
+---
 
-\*\*\* Taken from Mike Berners-Lee: ‘How Bad are Bananas?: The Carbon Footprint of Everything’ (2010).
+## An average spam email: 0.3 g CO2e (carbon dioxide equivalent)
+
+## A standard email: 4 g CO2e
+
+## An email with “long and tiresome attachments”: 50 g CO2e
+
+<Footnote>
+
+Taken from Mike Berners-Lee: [‘How Bad are Bananas?: The Carbon Footprint of Everything’ (2010)](https://www.chapters.indigo.ca/en-ca/books/how-bad-are-bananas-the/9781553658313-item.html).
+
+</Footnote>
 
 ---
 
 # Unnecessary emails
 
-Say you send 10 "Thank you" emails per week...
-(we all do this)
-30M Canadians using email
-40 tonnes of CO2e per day in Canada
+### ↪ Say you send 10 "Thank you" emails per week... (we all do this)
+
+### ↪ Say 30M Canadians using email
+
+### ⇉ 40 tonnes of CO2e per day in Canada
+
 ... just from "Thank you" emails
 
 ---
 
-# What else?
+# What else can you do?
 
-- no thank you emails, only copy people that are needed, dont forward
-- clean your mailing lists
-- unsubscribe your self
-- link to files instead of sending attachments
+- Only copy people that are needed, dont forward
+- Clean your mailing lists
+- Unsubscribe yourself
+- Link to files instead of sending attachments
 - Use chat apps (Slack, Teams, Discord)
 
 ---
 
-# what can you 2: Data tracking
+<LayoutColor color="#6b393f">
 
-Background data analytics related to advertising
+# \#2. Data tracking
 
----
-
-Your computer
-
-Lower your monitor brightness - 100% to 70% can save 20%
-
-Adjust power settings - sleep hibernate (also more secure) - turn it off
-
-Ecosia is a search engine that funds tree planting from the profit it makes through online searches.
-In fact, Ecosia estimates that Firefox users have planted 20,000 trees, offsetting up to 960,000 pounds of carbon emissions per year.
-Way to go, Firefox fans! Learn more about how to calculate and offset your carbon footprint at Carbonfund.org.
+</LayoutColor>
 
 ---
 
-# what can you 3: ewaste
+# Turn on strict tracking protection
 
-can it be refurbished?
-data desctruction
+- Stop pervasive tracking and collection of personal data
+- Most popular browsers have some form of anti-tracking or content-blocking
+- BitDefender anti-tracking
 
 ---
 
-# what can you 4: website performance
+<Split>
 
-The use of the internet alone causes emission of approximately 2,330,041 tons of CO2 and consumes 2,339,400 MWh of electricity everyday
+# Bit Defender<br />Anti-tracking
 
-internet search: 0.2g of CO2 in the environment.
+<Image src={Antitracker} style={{ height: "550px", width: "800px" }} />
+
+</Split>
+
+---
+
+# What's happening behind the scenes?
+
+- Reducing the payload (what you're downloading)
+- Reducing the constant flow of data as you interact with the site.
+
+---
+
+<LayoutColor color="#6b393f">
+
+# \#3. Your website
+
+</LayoutColor>
+
+---
+
+## The internet consumes over 1M MWh per day.
+
+## From the data centre to networks to the devices
+
+## It all consumes elctricity and in turn produces carbon emissions
+
+---
+
+<LayoutColor color="#467963">
+
+# Your website - What can you do?
+
+- Limit and improve big bulky images - Size them appropriately
+- Trim down the javascript (...remember all those data trackers?)
+- Use caching software
+
+# Its all about making the payload smaller
+
+</LayoutColor>
+
+---
+
+<LayoutColor color="#467963">
+
+# Quick list of tools
+
+- Compress your images - [TinyPNG](https://tinypng.com/)
+- Cache your content and minify your javascript: [w3cache](https://en-ca.wordpress.org/plugins/w3-total-cache/)
+
+### (I'll talk about hosting and CDNs and more in a minute)
+
+</LayoutColor>
+
+---
+
+# Win - Win - Win
+
+## Improves load speed and reduce barriers which means:
+
+### Better SEO
+
+### Better Accessibility
+
+### Better Conversion
+
+---
+
+<LayoutColor color="#467963">
+
+# Let's measure it
+
+## The average website produces 6.8 grams of CO2 per page view
+
+</LayoutColor>
+
+---
+
+<LayoutColorLight color="#fff">
+
+# www.muskfoundation.org
+
+<Image src={Muskfoundation} style={{ height: "500px", width: "1000px" }} />
+
+### 0.009 grams of CO2 per page view
+
+</LayoutColorLight>
+
+---
+
+<LayoutColor color="#0e11a8">
+
+# If it gets measured, it gets worked on
+
+## www.websitecarbon.com
+
+<Image src={Websitecarbon} style={{ height: "400px", width: "1000px" }} />
+
+</LayoutColor>
+
+---
+
+<LayoutColor color="#0e11a8">
+
+<Image src={Websitecarbon1} style={{ height: "400px", width: "1000px" }} />
+
+</LayoutColor>
+
+---
+
+<LayoutColor color="#0e11a8">
+
+<Image src={Websitecarbon2} style={{ height: "400px", width: "1000px" }} />
+
+</LayoutColor>
+
+---
+
+<LayoutColorLight color="#fff">
+
+# Sustainable Webdesign
+
+<Image
+  src={SustainableWebdesign}
+  style={{ height: "400px", width: "1000px" }}
+/>
+
+## Available at [A Book Apart](https://abookapart.com/products/sustainable-web-design/)
+
+</LayoutColorLight>
+
+---
+
+# Links
+
+https://blog.mozilla.org/firefox/digital-carbon-footprint/
 
 https://www.envirocentre.ca/how-to-minimize-the-impact-of-digital-technology-during-the-pandemic/
 
@@ -132,17 +309,179 @@ https://www.websitecarbon.com/
 
 https://www.thegreenwebfoundation.org/
 
----
-
-tech decisions and your small business
-
-# what can you 3: climate action tech
+https://vwo.com/blog/reduce-website-carbon-footprint/
 
 ---
 
-https://www.ovoenergy.com/ovo-newsroom/press-releases/2019/november/think-before-you-thank-if-every-brit-sent-one-less-thank-you-email-a-day-we-would-save-16433-tonnes-of-carbon-a-year-the-same-as-81152-flights-to-madrid.html
-Canada - 30M email using - 10 useless emails per week = 40M useless emails per day
-x1 email = 1g carbon = 0.000001 tonnes CO2e per email (Source: Mike Berners-Lee)
+<LayoutColor color="#6b393f">
+
+# \#4. Your website hosting
+
+## and Networks
+
+</LayoutColor>
+
+---
+
+<LayoutColor color="#467963">
+
+# Green Hosting
+
+- Website hosting on renewable energy
+- Green hosting options are increasing
+- Infrastructure, Efficiency, and ...
+- Source of electicity
+
+### How do you know?
+
+</LayoutColor>
+
+---
+
+<LayoutColor color="#467963">
+
+# Quick and Easy Answer: Anything in Montreal
+
+- Quebec electricity boasts 99% renewble energy (eg hydro)
+- Amazon, Google, IBM, Microsoft (Montreal and Quebec city)
+- The bigger story isn't quite clear...
+
+</LayoutColor>
+
+---
+
+<LayoutColor color="#292e42">
+
+<Image src={RebelLogoWhite} style={{ height: "100px", width: "450px" }} />
+
+- https://www.rebel.com
+- We'll help you move to our Montreal servers
+- I'm very liberal with discounts 😉
+
+</LayoutColor>
+
+---
+
+# To the cloud!
+
+- Cloud hosting is more energy efficient
+- Major focus efficiency
+- Large systems to scale up/down
+- Unlocks serverless, automation, scaling
+
+---
+
+<LayoutColor color="#000">
+
+# Content Distribution Network (CDN)
+
+- Put your content at the edge... near your users
+- [Cloudflare](https://en-ca.wordpress.org/plugins/cloudflare/) and [Stackpath (formerly MaxCDN)](https://www.stackpath.com/solutions/wordpress/) have wordpress plugins
+
+</LayoutColor>
+
+---
+
+<LayoutColor color="#6b393f">
+
+# \#5. e-Waste
+
+</LayoutColor>
+
+---
+
+# What is e-Waste
+
+- electronics
+- computers
+- monitors
+- printer cartridges
+
+### Lots of harmful chemicals from electronics seep into water and soil
+
+---
+
+<LayoutColor color="#467963">
+
+# [CompuCorps.org](https://compucorps.org/)
+
+- Donate computers, laptops (with a donation receipt)
+- That old server in the closet (move to the cloud)
+- Protect your information, and destroy media
+- They're also really good people
+
+</LayoutColor>
+
+---
+
+# What else can you do?
+
+- Drop off your electronics at BestBuy
+- Bring metals (and electronics) to AIM or other scrapyard
+
+---
+
+<LayoutColor color="#6b393f">
+
+# \#6. Get Involved
+
+</LayoutColor>
+
+---
+
+<LayoutColorLight color="#dcedd6">
+
+<Image src={ClimateActionTech} style={{ height: "250px", width: "250px" }} />
+
+# [ClimateAction.tech](https://climateaction.tech/)
+
+<div style={{width:"800px"}}>
+
+A community of practice of tech workers that provides support and guidance for systemic change in our organisations and industries, to face the climate crisis.
+
+</div>
+
+</LayoutColorLight>
+
+---
+
+<LayoutColorLight color="#dcedd6">
+
+### [\#LetsGreenTheWeb](https://climateaction.tech/actions/reduce-the-carbon-emissions-of-your-website/) - Reduce the carbon emissions of your website
+
+### Watch [ClimateActionTech TedX](https://tedx.climateaction.tech/)
+
+### Digital Climate Strike 2019 - Comapnies shut down online stores
+
+### Join [Slack group](https://climate-tech.slack.com/) - and the #Ottawa channel
+
+</LayoutColorLight>
+
+---
+
+<LayoutColor color="#6b393f">
+
+# \#6. Your work habits
+
+</LayoutColor>
+
+---
+
+<LayoutColor color="#467963">
+
+1. Turn off your computer over night (power bars, etc)
+
+2. Lower your monitor brightness - 100% to 70% can save 20%
+
+3. Adjust power settings - sleep hibernate
+
+4. Remeber anti-tracking software?
+
+5. Use Ecosia as a search engine.
+
+- Funds tree planting from the profit it makes through online searches
+
+</LayoutColor>
 
 ---
 

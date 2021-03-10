@@ -14,18 +14,16 @@ const Div = styled.div`
     background-color: #000;
     padding: 2px;
   }
+  font-size: 0.5em;
+  margin-left: 1em;
 `;
 
 export default ({ children, color }) => (
   <Div
     style={{
-      width: "100vw",
-      height: "100vw",
-      backgroundColor: color,
-      justifyContent: "center",
-      alignItems: "center",
-      display: "flex",
-      flexDirection: "column",
+      position: "absolute",
+      bottom: "0",
+      left: "0",
     }}
   >
     {children}

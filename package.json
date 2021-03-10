@@ -8,10 +8,14 @@
     "build": "mdx-deck build ./src/deck.mdx && cp -r ./src/images public/ "
   },
   "author": "Brett Tackaberry",
+  "license": "MIT",
   "devDependencies": {
     "mdx-deck": "^4.1.1"
   },
   "dependencies": {
+    "@emotion/core": "^11.0.0",
+    "@emotion/styled": "^11.1.5",
+    "react-particles-js": "^3.4.1",
     "styled-components": "^5.2.1"
   }
 }
