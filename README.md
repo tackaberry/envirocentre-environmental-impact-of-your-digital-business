@@ -6,6 +6,8 @@ From sending emails to web searches to where your website is hosted - small deci
 
 Slides deployed [here](http://environmental-impact-of-your-digital-business.s3-website.ca-central-1.amazonaws.com/).
 
+[On Eventbrite](https://www.eventbrite.ca/e/your-green-business-speaker-series-with-brett-tackaberry-from-rebelcom-tickets-144191347201)
+
 ### Related
 
 - [Rebel.com](https://www.rebel.com)
