@@ -2,6 +2,7 @@ export { default as theme } from "./components/Theme";
 import LayoutColor from "./components/LayoutColor";
 import LayoutColorLight from "./components/LayoutColorLight";
 import Footnote from "./components/Footnote";
+import Progress from "./components/Progress";
 
 import Brett from "./images/brett.jpg";
 import RebelLogo from "./images/Rebel-com-white-orange-large.png";
@@ -13,6 +14,12 @@ import Websitecarbon1 from "./images/websitecarbon1.png";
 import Websitecarbon2 from "./images/websitecarbon2.png";
 import SustainableWebdesign from "./images/sustainable-webdesign.png";
 import ClimateActionTech from "./images/climateactiontech.png";
+
+<Footer>
+
+<Progress />
+
+</Footer>
 
 <LayoutColor color="#333">
 
@@ -197,13 +204,17 @@ Taken from Mike Berners-Lee: [‘How Bad are Bananas?: The Carbon Footprint of E
 
 <LayoutColor color="#467963">
 
+<div style={{width:"1000px"}}>
+
 # The 3 things you need to do to make your website more green
 
 - Limit and improve big bulky images - Size them appropriately
 - Trim down the javascript (...remember all those data trackers?)
 - Use caching software
 
-# Its all about making the payload smaller and faster
+### Its all about making the payload smaller and faster
+
+</div>
 
 </LayoutColor>
 
@@ -288,7 +299,7 @@ Taken from Mike Berners-Lee: [‘How Bad are Bananas?: The Carbon Footprint of E
 
 <LayoutColorLight color="#fff">
 
-# Sustainable Webdesign
+# Sustainable Web Design
 
 <Image
   src={SustainableWebdesign}
@@ -301,6 +312,8 @@ Taken from Mike Berners-Lee: [‘How Bad are Bananas?: The Carbon Footprint of E
 
 ---
 
+<LayoutColor color="#000">
+
 # More Links
 
 https://blog.mozilla.org/firefox/digital-carbon-footprint/
@@ -312,6 +325,8 @@ https://www.websitecarbon.com/
 https://www.thegreenwebfoundation.org/
 
 https://vwo.com/blog/reduce-website-carbon-footprint/
+
+</LayoutColor>
 
 ---
 
@@ -342,9 +357,9 @@ https://vwo.com/blog/reduce-website-carbon-footprint/
 
 <LayoutColor color="#467963">
 
-# Quick and Easy Answer: Anything in Montreal
+# Quick and easy answer: Anything in Montreal
 
-- Quebec electricity boasts 99% renewble energy (eg hydro)
+- Quebec electricity is 99% renewble energy (eg hydroelectric)
 - Amazon, Google, IBM, Microsoft (Montreal and Quebec city)
 - The bigger story isn't quite clear...
 
@@ -443,7 +458,7 @@ https://vwo.com/blog/reduce-website-carbon-footprint/
 
 4. 👆 Remeber anti-tracking software?
 
-5. Use Ecosia as a search engine.<br /><em>&nbsp;&nbsp;➡ Funds tree planting from the profit it makes through online searches</em>
+5. Use [Ecosia](https://www.ecosia.org/) as a search engine.<br /><em>&nbsp;&nbsp;➡ Funds tree planting from the profit it makes through online searches</em>
 
 </div>
 
@@ -477,6 +492,8 @@ A community of practice of tech workers that provides support and guidance for s
 
 <LayoutColorLight color="#dcedd6">
 
+<div style={{textAlign:"left", fontSize:"150%", width:"1200px"}}>
+
 ### [\#LetsGreenTheWeb](https://climateaction.tech/actions/reduce-the-carbon-emissions-of-your-website/) - Reduce the carbon emissions of your website
 
 ### Watch [ClimateActionTech TedX](https://tedx.climateaction.tech/)
@@ -485,7 +502,23 @@ A community of practice of tech workers that provides support and guidance for s
 
 ### Join [Slack group](https://climate-tech.slack.com/) - and the #Ottawa channel
 
+</div>
+
 </LayoutColorLight>
+
+---
+
+<LayoutColor color="#467963">
+
+# Everyone can own these changes.
+
+# These are easy wins.
+
+# These aren't going to come trickling down the hierarchy.
+
+# You got this.
+
+</LayoutColor>
 
 ---
 
@@ -504,5 +537,3 @@ A community of practice of tech workers that provides support and guidance for s
 - [This Presentation](http://environmental-impact-of-your-digital-business.s3-website.ca-central-1.amazonaws.com/)
 
 </LayoutColor>
-
----
