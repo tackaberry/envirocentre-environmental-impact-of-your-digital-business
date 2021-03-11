@@ -13,6 +13,9 @@ const Div = styled.div`
   a {
     padding: 2px;
   }
+  td {
+    padding: 0.5em 1em;
+  }
 `;
 
 export default ({ children, color }) => (
