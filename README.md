@@ -8,6 +8,8 @@ Slides deployed [here](http://environmental-impact-of-your-digital-business.s3-w
 
 [On Eventbrite](https://www.eventbrite.ca/e/your-green-business-speaker-series-with-brett-tackaberry-from-rebelcom-tickets-144191347201)
 
+[The presentation on youtube](https://www.youtube.com/watch?v=zvnVRg-Bi8A)
+
 ### Related
 
 - [Rebel.com](https://www.rebel.com)
